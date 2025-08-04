@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { NavBar } from './NavBar'
 
 export const Header = () => {
   return (
@@ -52,6 +53,7 @@ export const Header = () => {
               Холбоо барих
             </Link>
           </nav>
+          <NavBar />
         </div>
       </div>
     </header>
