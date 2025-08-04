@@ -35,7 +35,7 @@ export const Header = () => {
               Бүтээгдэхүүн
             </Link>
             <Link
-              href="#custom"
+              href="/custom"
               className="hover:text-[#eab308] transition-colors"
             >
               Захиалга

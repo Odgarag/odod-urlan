@@ -30,6 +30,7 @@ export const Hero = () => {
               Бүтээгдэхүүн үзэх
             </Button>
             <Button
+              onClick={() => (window.location.href = '/custom')}
               size="lg"
               variant="outline"
               className="border-gray-700 text-gray-800 hover:bg-gray-100"
