@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export const ThisCompany = () => {
   return (
-    <section id="about" className="py-16 sm:py-20 bg-white">
+    <section id="about" className="py-16 sm:py-20 bg-white scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 items-center">
           <div className="relative w-full max-w-md sm:max-w-lg mx-auto lg:mx-0">

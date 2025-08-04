@@ -13,10 +13,8 @@ export const Header = () => {
       const currentScrollY = window.scrollY
 
       if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        // доошоо гүйлгэвэл нуух
         setIsVisible(false)
       } else {
-        // дээшээ гүйлгэвэл гаргах
         setIsVisible(true)
       }
 

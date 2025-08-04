@@ -43,7 +43,7 @@ const Page = () => {
   return (
     <div>
       <CustomHeader />
-      <section className="relative overflow-hidden py-20 bg-gradient-to-r from-[#fef6e4] via-[#fde68a] to-[#fef6e4] text-gray-900">
+      <section className="relative overflow-hidden py-20 bg-gradient-to-r from-[#fef6e4] via-[#fde68a] to-[#fef6e4] text-gray-900 mt-20">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div

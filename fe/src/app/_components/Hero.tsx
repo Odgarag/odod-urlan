@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export const Hero = () => {
   return (
-    <section className="relative overflow-hidden py-16 sm:py-24 bg-gradient-to-r from-[#fef6e4] via-[#fde68a] to-[#fef6e4] text-gray-900">
+    <section className="relative overflow-hidden py-16 sm:py-24 bg-gradient-to-r from-[#fef6e4] via-[#fde68a] to-[#fef6e4] text-gray-900 mt-24">
       <div className="absolute inset-0 bg-white/20" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 items-center">
         <motion.div
