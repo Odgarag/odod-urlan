@@ -29,6 +29,7 @@ import { Hero } from './_components/Hero'
 import { Footer } from './_components/Footer'
 import { Contact } from './_components/Contact'
 import { ThisCompany } from './_components/ThisCompany'
+import { About } from './_components/About'
 
 export default function HomePage() {
   return (
@@ -365,7 +366,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
+      <About />
       <ThisCompany />
       <Contact />
       <Footer />

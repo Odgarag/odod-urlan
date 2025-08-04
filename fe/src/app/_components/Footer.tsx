@@ -41,7 +41,7 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white">
+                <Link href="/custom" className="hover:text-white">
                   Захиалгат хувцас
                 </Link>
               </li>
@@ -59,15 +59,15 @@ export const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Холбоо барих</h4>
             <div className="space-y-2">
-              <p>+976 11 123456</p>
+              <p>+976 94755551</p>
               <p>info@ododurlan.mn</p>
               <p>Улаанбаатар хот</p>
-              <p>Сүхбаатар дүүрэг</p>
+              <p>Баянзүрх дүүрэг</p>
             </div>
           </div>
         </div>
         <div className="border-t border-blue-800 mt-8 pt-8 text-center">
-          <p>&copy; 2024 Одод Урлан. Бүх эрх хуулиар хамгаалагдсан.</p>
+          <p>&copy; 2025 Одод Урлан. Бүх эрх хуулиар хамгаалагдсан.</p>
         </div>
       </div>
     </footer>

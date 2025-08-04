@@ -19,8 +19,8 @@ export const Contact = () => {
               <Phone className="w-8 h-8 text-blue-600" />
             </div>
             <h3 className="text-xl font-bold text-blue-900 mb-2">Утас</h3>
-            <p className="text-gray-600">+976 11 123456</p>
-            <p className="text-gray-600">+976 99 123456</p>
+            <p className="text-gray-600">+976 94755551</p>
+            <p className="text-gray-600">+976 89870167</p>
           </Card>
           <Card className="text-center p-6">
             <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -35,8 +35,8 @@ export const Contact = () => {
               <MapPin className="w-8 h-8 text-green-600" />
             </div>
             <h3 className="text-xl font-bold text-blue-900 mb-2">Хаяг</h3>
-            <p className="text-gray-600">Улаанбаatar хот</p>
-            <p className="text-gray-600">Сүхбаатар дүүрэг</p>
+            <p className="text-gray-600">Улаанбаатар хот</p>
+            <p className="text-gray-600">Баянзүрх дүүрэг</p>
           </Card>
         </div>
       </div>
