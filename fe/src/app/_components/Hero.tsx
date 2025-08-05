@@ -24,6 +24,7 @@ export const Hero = () => {
           </p>
           <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-3 sm:gap-4">
             <Button
+              onClick={() => (window.location.href = '/totalOutput')}
               size="lg"
               className="bg-[#eab308] text-white font-semibold shadow-md hover:bg-[#d4a106]"
             >
@@ -46,8 +47,8 @@ export const Hero = () => {
           transition={{ duration: 0.7 }}
           className="relative w-full max-w-sm sm:max-w-md mx-auto lg:mx-0"
         >
-          <Image
-            src="/placeholder.svg?height=600&width=500"
+          <img
+            src="https://res.cloudinary.com/docvcxodh/image/upload/v1753934166/IMG_2572_i7w0o9.jpg"
             alt="Монгол дээл"
             width={500}
             height={600}

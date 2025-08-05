@@ -34,10 +34,12 @@ export const Header = () => {
       <div className="max-w-7xl mx-auto px-6 py-5">
         <div className="flex items-center justify-between">
           {/* Logo & Title */}
-          <div className="flex items-center space-x-4">
+          <Link href="/" className="flex items-center space-x-4">
             <div className="w-12 h-12 bg-[#eab308] rounded-full flex items-center justify-center shadow-md">
               <img
-                src="https://res.cloudinary.com/docvcxodh/image/upload/v1753931682/d1a5d825-4848-40c7-9e49-e448bec0e176_fb5c1t.jpg"
+                src={
+                  'https://res.cloudinary.com/docvcxodh/image/upload/v1753931682/d1a5d825-4848-40c7-9e49-e448bec0e176_fb5c1t.jpg'
+                }
                 alt="Logo"
                 className="object-cover rounded-full w-12 h-12"
               />
@@ -50,12 +52,12 @@ export const Header = () => {
                 Монгол дээл хувцасны урлан
               </p>
             </div>
-          </div>
+          </Link>
 
           {/* Desktop nav */}
           <nav className="hidden md:flex space-x-8 text-sm font-medium text-gray-700">
             <Link
-              href="#products"
+              href="/totalOutput"
               className="hover:text-[#eab308] transition-colors"
             >
               Бүтээгдэхүүн
@@ -79,7 +81,6 @@ export const Header = () => {
               Холбоо барих
             </Link>
           </nav>
-
           <NavBar />
         </div>
       </div>
