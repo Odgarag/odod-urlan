@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { NavBar } from './NavBar'
+import { ShoppingBag } from 'lucide-react'
 
 export const Header = () => {
   const [isVisible, setIsVisible] = useState(true)
@@ -33,7 +34,6 @@ export const Header = () => {
     >
       <div className="max-w-7xl mx-auto px-6 py-5">
         <div className="flex items-center justify-between">
-          {/* Logo & Title */}
           <Link href="/" className="flex items-center space-x-4">
             <div className="w-12 h-12 bg-[#eab308] rounded-full flex items-center justify-center shadow-md">
               <img
@@ -54,7 +54,6 @@ export const Header = () => {
             </div>
           </Link>
 
-          {/* Desktop nav */}
           <nav className="hidden md:flex space-x-8 text-sm font-medium text-gray-700">
             <Link
               href="/totalOutput"
@@ -81,7 +80,13 @@ export const Header = () => {
               Холбоо барих
             </Link>
           </nav>
-          <NavBar />
+          <div className="flex items-center space-x-4 justify-center">
+            <ShoppingBag
+              onClick={() => (window.location.href = '/basket')}
+              className="-mt-1.5 cursor-pointer"
+            />
+            <NavBar />
+          </div>
         </div>
       </div>
     </header>

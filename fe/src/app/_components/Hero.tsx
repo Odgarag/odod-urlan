@@ -26,7 +26,7 @@ export const Hero = () => {
             <Button
               onClick={() => (window.location.href = '/totalOutput')}
               size="lg"
-              className="bg-[#eab308] text-white font-semibold shadow-md hover:bg-[#d4a106]"
+              className="bg-[#eab308] text-white font-semibold shadow-md hover:bg-[#d4a106] cursor-pointer"
             >
               Бүтээгдэхүүн үзэх
             </Button>
@@ -34,7 +34,7 @@ export const Hero = () => {
               onClick={() => (window.location.href = '/custom')}
               size="lg"
               variant="outline"
-              className="border-gray-700 text-gray-800 hover:bg-gray-100"
+              className="border-gray-700 text-gray-800 hover:bg-gray-100 cursor-pointer"
             >
               Захиалга өгөх
             </Button>

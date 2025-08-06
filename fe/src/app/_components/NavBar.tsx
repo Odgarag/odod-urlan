@@ -17,7 +17,7 @@ export const NavBar = () => {
       <Sheet>
         <SheetTrigger asChild>
           <button className=" top-4 right-4 z-50">
-            <AlignJustify className="w-6 h-6 text-gray-800" />
+            <AlignJustify className="w-6 h-6 text-gray-800 cursor-pointer" />
           </button>
         </SheetTrigger>
 
