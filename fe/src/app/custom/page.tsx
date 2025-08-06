@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import {
   Card,
@@ -26,7 +27,10 @@ const formSchema = z.object({
   productType: z.string().min(1, 'Төрөл сонгоно уу'),
   description: z.string().min(10, 'Дэлгэрэнгүй тайлбар бичнэ үү'),
 })
+
 const Page = () => {
+  const [imagePreview, setImagePreview] = useState<string | null>(null)
+
   const {
     register,
     handleSubmit,
@@ -35,9 +39,21 @@ const Page = () => {
     resolver: zodResolver(formSchema),
   })
 
+  const onImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+    if (file) {
+      const reader = new FileReader()
+      reader.onloadend = () => {
+        setImagePreview(reader.result as string)
+      }
+      reader.readAsDataURL(file)
+    }
+  }
+
   const onSubmit = (data: any) => {
     console.log('Submitted:', data)
     alert('Захиалга илгээгдлээ!')
+    // Хэрвээ зураг илгээх шаардлагатай бол FormData ашиглаж болно
   }
 
   return (
@@ -80,7 +96,6 @@ const Page = () => {
               transition={{ duration: 0.7 }}
               className="relative w-full max-w-sm sm:max-w-md mx-auto lg:mx-0"
             >
-              {' '}
               <Card className="bg-white text-gray-900">
                 <form onSubmit={handleSubmit(onSubmit)}>
                   <CardHeader>
@@ -188,6 +203,25 @@ const Page = () => {
                       )}
                     </div>
 
+                    <div>
+                      <Label htmlFor="image">
+                        Зураг хавсаргах (сонголттой)
+                      </Label>
+                      <Input
+                        id="image"
+                        type="file"
+                        accept="image/*"
+                        onChange={onImageChange}
+                      />
+                      {imagePreview && (
+                        <img
+                          src={imagePreview}
+                          alt="Preview"
+                          className="mt-3 rounded-md border w-full h-auto max-h-64 object-contain"
+                        />
+                      )}
+                    </div>
+
                     <Button
                       type="submit"
                       className="w-full bg-blue-600 hover:bg-blue-700 text-lg py-3"
@@ -204,4 +238,5 @@ const Page = () => {
     </div>
   )
 }
+
 export default Page
