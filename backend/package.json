@@ -12,7 +12,6 @@
     "dev": "ts-node src/index.ts",
     "build": "tsc"
   },
-
   "devDependencies": {
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
